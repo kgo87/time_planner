@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="time-block">
+      <!-- <section class="col-12 col-md-8 col-lg-9"> -->
+        <!-- <div class="table-responsive"> -->
+          <table id = "timetable" class="table table-bordered custom-table table-hover">
+            <thead>
+              <tr id="table_header">
+                <th scope="col" class="w-15 p-3">Time</th>
+                <th scope="col"class="w-75 p-3">Activity</th>
+                <th scope="col" class="w10 p-3">Save</th>
+              </tr>
+            </thead>
+            <tbody id="project-display">
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-9">9AM</td>
+                <td id = "hour9"><textarea id= '9' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>        
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-10">10AM</td>
+                <td id = "hour10"><textarea id= '10' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-11">11AM</td>
+                <td id = "hour11"><textarea id= '11' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-12">12PM</td>
+                <td id = "hour12"><textarea id= '12' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-13">1PM</td>
+                <td id = "hour13"><textarea id= '13' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-14">2PM</td>
+                <td id = "hour14"><textarea id= '14' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-15">3PM</td>
+                <td id = "hour15"><textarea id= '15' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-16">4PM</td>
+                <td id = "hour16"><textarea id= '16'class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+              <tr>
+                <td scope="col" class="time_cell w-15 p-3" id = "hour-17">5PM</td>
+                <td id = "hour17"><textarea  id= '17' class="textarea">Schedule Event</textarea></td>
+                <td><button type="button" class = "saveBtn fa fa-lock"></button></td>
+              </tr>
+
+            </tbody>
+          </table>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
